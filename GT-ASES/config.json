@@ -1,0 +1,70 @@
+{
+  "EDU_SCORES": {
+    "High School": 10,
+    "Vocational": 20,
+    "Bachelor's": 40,
+    "Master's": 55,
+    "Doctorate": 70
+  },
+  "EXP_SCORES": {
+    "0 years": 0,
+    "1-2 years": 10,
+    "3-5 years": 20,
+    "6-10 years": 30,
+    "10+ years": 40
+  },
+  "SKILL_PTS": 5,
+  "CERT_PTS": 5,
+  "QUALIFIED_MIN": 80,
+  "FOR_REVIEW_MIN": 50,
+  "POSITIONS": [
+    "Junior Software Developer",
+    "Network Engineer",
+    "IT Support Specialist",
+    "Cybersecurity Analyst",
+    "Database Administrator",
+    "Systems Analyst",
+    "Project Manager (IT)"
+  ],
+  "SKILLS_LIST": [
+    "Python", "Java", "C++", "JavaScript", "HTML/CSS",
+    "SQL", "Networking", "Cybersecurity", "Database Admin",
+    "Web Development", "Mobile Development", "Cloud Computing",
+    "Machine Learning", "Data Analysis", "System Administration"
+  ],
+  "CERTS_LIST": [
+    "CCNA", "CompTIA A+", "CompTIA Security+", "AWS Certified",
+    "PMP", "TESDA NC II", "Oracle Certified", "Microsoft Certified",
+    "Google IT Support", "Cisco CCNP"
+  ],
+  "POSITION_RELEVANCE": {
+    "Junior Software Developer": {
+      "relevant_skills": ["Python", "Java", "JavaScript", "HTML/CSS", "Web Development", "Mobile Development", "SQL"],
+      "relevant_certs": ["Google IT Support", "AWS Certified", "Microsoft Certified"]
+    },
+    "Network Engineer": {
+      "relevant_skills": ["Networking", "Cybersecurity", "System Administration", "Cloud Computing"],
+      "relevant_certs": ["CCNA", "Cisco CCNP", "CompTIA Security+"]
+    },
+    "IT Support Specialist": {
+      "relevant_skills": ["Networking", "System Administration", "HTML/CSS", "Cybersecurity"],
+      "relevant_certs": ["CompTIA A+", "Google IT Support", "TESDA NC II"]
+    },
+    "Cybersecurity Analyst": {
+      "relevant_skills": ["Cybersecurity", "Networking", "Python", "Cloud Computing"],
+      "relevant_certs": ["CompTIA Security+", "CCNA", "Cisco CCNP"]
+    },
+    "Database Administrator": {
+      "relevant_skills": ["SQL", "Database Admin", "Python", "Data Analysis"],
+      "relevant_certs": ["Oracle Certified", "Microsoft Certified", "AWS Certified"]
+    },
+    "Systems Analyst": {
+      "relevant_skills": ["SQL", "Data Analysis", "Python", "Web Development", "System Administration"],
+      "relevant_certs": ["Microsoft Certified", "AWS Certified", "PMP"]
+    },
+    "Project Manager (IT)": {
+      "relevant_skills": ["Data Analysis", "Cloud Computing", "System Administration"],
+      "relevant_certs": ["PMP", "AWS Certified", "Microsoft Certified"]
+    }
+  }
+}

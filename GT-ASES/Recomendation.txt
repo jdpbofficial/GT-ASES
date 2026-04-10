@@ -1,0 +1,27 @@
+ Critical / Security
+
+  1. Hash passwords — users.json stores plaintext passwords. Use hashlib (e.g., bcrypt or hashlib.sha256 with salt) so credentials aren't readable at rest.
+  2. Validate email & phone fields — currently any text is accepted. Add regex validation for format.
+
+  Architecture / Reliability
+
+  3. Fix the logout mechanism — it spawns a new Python subprocess, which can leave orphaned processes. Instead, destroy the current window and re-instantiate LoginWindow in the same process.
+  4. Persist computed scores — applicants.json always shows score: 0, status: "" because scores are computed at load time but never saved back. Write computed values to JSON so the data file is consistent with what the UI shows.
+  5. Add data backup — if JSON files get corrupted, all data is lost. Consider auto-backups or a "save previous" copy on each write.
+
+  Scoring Logic
+
+  6. Position-aware scoring — every skill/certification is worth the same 5 points regardless of relevance. A "Networking" skill should matter more for a Network Engineer role than "HTML/CSS". Consider a mapping of position → relevant
+  skills/certs with higher weights.
+  7. Make scoring configurable — thresholds, point values, and option lists are hardcoded in theme.py. Move them to a config.json so HR can adjust without touching code.
+
+  Functionality Gaps
+
+  8. Password change / user edit — users can be added and deleted but never edited. Add a way to update credentials or roles.
+  9. Audit trail / logging — no record of who did what (added, edited, deleted applicants). Add a simple audit_log.json that records user, action, timestamp, and target.
+  10. Confirmation dialogs for destructive actions — add undo or at least a "Are you sure?" prompt for applicant deletion.
+
+  Quality / Future-Proofing
+
+  11. Add unit tests — especially for data_manager.py (scoring logic, authentication, CRUD). Even a basic test_data_manager.py would catch regressions.
+  12. Consider SQLite instead of JSON — as data grows, JSON gets slow and fragile. SQLite is built into Python, needs no extra dependency, and gives you queries, transactions, and integrity.

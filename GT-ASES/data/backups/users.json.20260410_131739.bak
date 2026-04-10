@@ -1,0 +1,23 @@
+[
+  {
+    "userID": 1,
+    "username": "admin",
+    "password": "e9c962cdad397c0c27a88c6de8c4dbd8$6cd96e280020f62c42ee9e932f44762cd5cfc385266f58e1bcf5b8d44f5dc7af",
+    "role": "Admin",
+    "fullName": "HR Administrator"
+  },
+  {
+    "userID": 2,
+    "username": "hrstaff",
+    "password": "9291ba4bb19871f079f5343721a80cf9$3b0c266607ef340141beae91a7336f4f163fc8ae270916776480c38797195340",
+    "role": "Staff",
+    "fullName": "HR Staff Member"
+  },
+  {
+    "userID": 3,
+    "username": "obet",
+    "password": "548de2a2675d236878147ae59fb9b9b6$ca2d669e3c775f07b9cdd94a630add90b1de308d15455b572ac767d3f8c36a27",
+    "role": "Admin",
+    "fullName": "obet"
+  }
+]

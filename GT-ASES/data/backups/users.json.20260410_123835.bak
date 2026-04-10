@@ -1,0 +1,23 @@
+[
+  {
+    "userID": 1,
+    "username": "admin",
+    "password": "admin123",
+    "role": "Admin",
+    "fullName": "HR Administrator"
+  },
+  {
+    "userID": 2,
+    "username": "hrstaff",
+    "password": "staff123",
+    "role": "Staff",
+    "fullName": "HR Staff Member"
+  },
+  {
+    "userID": 3,
+    "username": "obet",
+    "password": "obet",
+    "role": "Admin",
+    "fullName": "obet"
+  }
+]

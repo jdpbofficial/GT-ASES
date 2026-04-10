@@ -1,0 +1,15 @@
+ 1. python main.py — app launches, login works with existing credentials
+ 2. Check data/users.json — passwords are now hashed (contain $)
+ 3. Add new applicant — email/phone validation enforced
+ 4. Edit applicant — validation still works
+ 5. Delete applicant — confirmation dialog appears
+ 6. Run screening — position-aware scores visible
+ 7. Export CSV — works for both all and qualified-only
+ 8. Add user, edit user, change password — all work
+ 9. Delete user — cannot delete self
+ 10. Logout — returns to login screen (no new process)
+ 11. Login again — session works
+ 12. Check data/backups/ — backup files exist
+ 13. Check data/audit_log.jsonl — log entries present
+ 14. Edit config.json (e.g., change SKILL_PTS) — scores update on next app launch
+ 15. python -m unittest discover tests/ — all tests pass
